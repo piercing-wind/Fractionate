@@ -51,20 +51,20 @@ export const ClientReviews = () => {
   const reviews = [
     {
       text: "Fractionate has completely transformed my investment approach. The ability to invest in high-quality real estate through fractional ownership has opened up opportunities I never imagined. The returns have been outstanding, and the entire process is incredibly smooth.",
-      author: "John Doe",
-      location: "New York, NY",
+      author: "Rajesh Patel",
+      location: "Gurugram, Haryana",
       rating: 4,
     },
     {
       text: "As a first-time investor, I was initially hesitant about real estate. Fractionate made the process simple and accessible. Their platform is intuitive, and the support team is always ready to help. I'm thrilled with my investment results!",
-      author: "Jane Smith",
-      location: "Los Angeles, CA",
+      author: "Simridhi Singh",
+      location: "Noida, Delhi",
       rating: 5,
     },
     {
       text: "Fractionate offers a groundbreaking way to invest in real estate. The fractional ownership model allows me to diversify my portfolio without needing a large capital outlay. The returns have exceeded my expectations, and I couldn't be happier with the service.",
-      author: "Michael Johnson",
-      location: "Chicago, IL",
+      author: "Vikas Sharma",
+      location: "Amritsar, Punjab",
       rating: 5,
     },
   ];

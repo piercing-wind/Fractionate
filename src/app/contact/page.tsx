@@ -17,7 +17,7 @@ export default function ContactPage() {
                      <p style={{display: 'ruby'}}>Business Name <FolderPen color="#ffa014"/>: <span className="text-2xl text-yellow"> Fractionate</span></p>
                      <p style={{display: 'ruby'}}>Address <MapPinHouse color="#ffa014"/>: D Block Ranit Avenue, Amritsar, India</p>
                      <p style={{display: 'ruby'}}>Phone <Phone color="#ffa014"/>: <Link className="hover:text-yellow" href="tel:917700008725">+91 77000 08725</Link></p>
-                     <p style={{display: 'ruby'}}>Email <Mail color="#ffa014"/>: <Link className="hover:text-yellow" href="mailto:info@fractionate.com">info@fractionate.com</Link></p>
+                     <p style={{display: 'ruby'}}>Email <Mail color="#ffa014"/>: <Link className="hover:text-yellow" href="mailto:info@fractionate.in">info@fractionate.in</Link></p>
                      <p style={{display: 'ruby'}}>Geo Locatopn <MapPin color="#ffa014"/>: <Link className="hover:text-yellow" href="https://maps.app.goo.gl/UUA8aTegmswzs3iX7">Google Map</Link></p>
                   </div>
                </Animator>

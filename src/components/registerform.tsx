@@ -68,7 +68,6 @@ export function RegisterForm({buttonText="Request Callback"}: {buttonText?: stri
                         autoCapitalize="words"
                         className="shadow-none border-b border-t-0 border-r-0 border-l-0 bg-neutral-50"
                         autoComplete="given-name"
-                        autoFocus
                         disabled={formState.isSubmitting|| transition}
                     />
                    </FormControl>

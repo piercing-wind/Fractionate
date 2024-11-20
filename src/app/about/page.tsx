@@ -61,7 +61,7 @@ export default function AboutPage() {
                      <FadeText className='text-5xl font-semibold text-yellow' framerProps={{ hidden: { opacity: 0 }, show: { opacity: 1, transition: { type: "spring", delay: 0.2 } }, }} direction='up' text='Fractionate' />
                      <FadeText className='text-lg' framerProps={{ hidden: { opacity: 0 }, show: { opacity: 1, transition: { type: "spring", delay: 0.3 } }, }} direction='up' text='Your Key To Generational Wealth' />
                   </div>
-                  <FadeText className='text-xl pcolor' framerProps={{ hidden: { opacity: 0 }, show: { opacity: 1, transition: { type: "spring", delay: 0.4 } }, }} direction='up' text='At Fraction Nate, we make real estate investment accessible to everyone. By offering fractional ownership in high-value properties, we empower investors to diversify their portfolios and grow wealth without the complexities of traditional property ownership. With our expertise and innovative platform, owning a share of premium real estate is now within reach for all.' />
+                  <FadeText className='text-xl pcolor' framerProps={{ hidden: { opacity: 0 }, show: { opacity: 1, transition: { type: "spring", delay: 0.4 } }, }} direction='up' text='At Fractionate, we make real estate investment accessible to everyone. By offering fractional ownership in high-value properties, we empower investors to diversify their portfolios and grow wealth without the complexities of traditional property ownership. With our expertise and innovative platform, owning a share of premium real estate is now within reach for all.' />
                </div>
             </div>
             <div className="absolute w-24 h-24 bg-gradient-to-bl from-yellow via-neutral-400 to-white opacity-50 -z-20 rounded-full -bottom-14 left-[14%]" />
@@ -84,7 +84,7 @@ export default function AboutPage() {
                      fill
                      style={{
                         objectFit: 'cover',
-                        zIndex: -1,
+                        zIndex: -20,
                         opacity: 0.8
                      }}
                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 75vw, (max-width: 1024px) 50vw, 33vw"

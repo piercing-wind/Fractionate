@@ -67,9 +67,9 @@ export default function PrivacyPolicy() {
         <p className="mb-4">
           If you have any questions or concerns about this Privacy Policy, please contact us at:
         </p>
-        <p className="mb-4">Email: info@fractionate.com</p>
+        <p className="mb-4">Email: info@fractionate.in</p>
         <p className="mb-4">Phone: +91 77000-08725</p>
-        <p className="mb-4">Address: D-Block Ranjit Avenue, Amritsar</p>
+        <p className="mb-4">Address:SCO-81 D Block Ranjit Avenue, Amritsar</p>
       </div>
       <Footer />
     </main>

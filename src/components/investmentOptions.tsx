@@ -5,21 +5,21 @@ import Animator, { ZoomAnimator } from "./animator"
 export const InvestmentOptions = () => {
    const options = [
       {
-         icon : <TrendingUp color="#ffffff" />,
-         name : 'FIP - Fractionate Investment Platform',
-         description : 'FIP enables fractional ownership in real estate, making high-value investments accessible to all.'
+        icon: <TrendingUp color="#ffffff" />,
+        name: 'Earn',
+        description: 'Generate passive income through fractional ownership and high-value real estate investments.'
       },
       {
-         icon : <Users color="#ffffff" />,
-         name : 'Real Estate Crowdfunding',
-         description : 'Pool your funds with other investors to invest in large-scale real estate projects and earn potential returns.'
+        icon: <Users color="#ffffff" />,
+        name: 'Safe',
+        description: 'Invest in diversified, lower-risk real estate assets that provide stability and security for your capital.'
       },
       {
-         icon : <Bed color="#ffffff" />,
-         name : 'Real Estate Crowdfunding',
-         description : 'Pool your funds with other investors to invest in large-scale real estate projects and earn potential returns.'
+        icon: <Bed color="#ffffff" />,
+        name: 'High Growth',
+        description: 'Benefit from the potential for high returns by investing in fast-growing real estate markets and projects.'
       }
-      ]
+    ]
 
    return (
       <section className="w-full py-24 relative min-h-screen flex flex-col items-center justify-center gap-y-8">

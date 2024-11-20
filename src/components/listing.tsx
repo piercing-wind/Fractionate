@@ -49,7 +49,7 @@ const PropertyCard = memo(({data, tag = "popular"}:{data : Property ,tag ?: 'pop
                      <p className="text-lg pcolor">{data.location}</p>
                   </div>
                   {/* <p className="text-lg pcolor">Discription</p> */}
-                  <Link href="mailto:info@fractionate.com" className="px-8 py-1 border-2 border-yellow mt-2 rounded-full hover:scale-105 transition-all duration-300 flex items-center justify-center text-lg">Inquire Now</Link>
+                  <Link href="mailto:info@fractionate.in" className="px-8 py-1 border-2 border-yellow mt-2 rounded-full hover:scale-105 transition-all duration-300 flex items-center justify-center text-lg">Inquire Now</Link>
                   {/* <p className="text-lg pcolor flex gap-4 items-center">Price <IndianRupee size={16}/></p> */}
                </div>
       </div>

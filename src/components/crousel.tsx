@@ -145,7 +145,7 @@ const Carousel = () => {
           />
         ))}
       </div>
-      <Link href="/properties" >
+      {/* <Link href="/properties" > */}
         <ZoomAnimator
           framerProps={{
             hidden: { opacity: 0, scale: 0.8, transformOrigin: 'center' },
@@ -157,7 +157,7 @@ const Carousel = () => {
           <House color="#ffa014" />
           View Opportunity
         </ZoomAnimator>
-      </Link>
+      {/* </Link> */}
     </div>
   );
 };

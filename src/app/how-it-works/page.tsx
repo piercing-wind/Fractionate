@@ -77,7 +77,7 @@ export default function HowItWorksPage() {
                fill
                style={{
                   objectFit : 'cover',
-                  zIndex: -11
+                  zIndex: -20
                }}
                loading="eager"
                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"

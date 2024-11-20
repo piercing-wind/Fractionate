@@ -8,7 +8,7 @@ export default function TermsAndConditions() {
       <div className="max-w-5xl mx-auto w-full p-8">
         <h1 className="text-3xl sm:text-4xl font-bold text-yellow mb-4">Terms and Conditions for Fractionate</h1>
         <p className="mb-4">
-          Welcome to Fractionate, a platform owned and operated by Fractionate Properties Private Limited (the &ldquo;Company&rdquo;), registered under the laws of India and headquartered in Hyderabad, Telangana. By visiting our website and accessing the resources, services, products, and tools provided, you agree to comply with these Terms and Conditions along with our Privacy Policy.
+          Welcome to Fractionate, a platform owned and operated by Fractionate Properties Private Limited (the &ldquo;Company&rdquo;), registered under the laws of India and headquartered in Amritsar, Punjab. By visiting our website and accessing the resources, services, products, and tools provided, you agree to comply with these Terms and Conditions along with our Privacy Policy.
         </p>
         <p className="mb-4">
           These Terms and our Privacy Policy apply to all website visitors. Please read both documents carefully. The content on this website should not be interpreted as authorization by the Securities and Exchange Board of India (&ldquo;SEBI&rdquo;) to solicit investments, nor does it qualify as a SEBI-approved crowdfunding platform or stock exchange. The website is exclusively for services provided to registered users, not for public investment solicitation.
@@ -27,7 +27,7 @@ export default function TermsAndConditions() {
         </p>
         <h2 className="text-2xl font-semibold text-yellow mb-2">Authorized Users</h2>
         <p className="mb-4">
-          Certain services and sections of the website are accessible only to authorized users with valid login credentials. Unauthorized access, password sharing, or misuse is prohibited. Users are responsible for safeguarding their credentials and reporting unauthorized activities promptly to info@fractionate.com.
+          Certain services and sections of the website are accessible only to authorized users with valid login credentials. Unauthorized access, password sharing, or misuse is prohibited. Users are responsible for safeguarding their credentials and reporting unauthorized activities promptly to info@fractionate.in.
         </p>
         <h2 className="text-2xl font-semibold text-yellow mb-2">Third-Party Links</h2>
         <p className="mb-4">
@@ -59,7 +59,7 @@ export default function TermsAndConditions() {
         </p>
         <h2 className="text-2xl font-semibold text-yellow mb-2">Governing Law</h2>
         <p className="mb-4">
-          These Terms are governed by the laws of Telangana, India. Any disputes will be resolved through arbitration in accordance with Indian laws.
+          These Terms are governed by the laws of Punjab, India. Any disputes will be resolved through arbitration in accordance with Indian laws.
         </p>
         <h2 className="text-2xl font-semibold text-yellow mb-2">Electronic Communication</h2>
         <p className="mb-4">
@@ -67,7 +67,7 @@ export default function TermsAndConditions() {
         </p>
         <h2 className="text-2xl font-semibold text-yellow mb-2">Contact Us</h2>
         <p className="mb-4">
-          For any questions about these Terms, please contact us at info@fractionate.com.
+          For any questions about these Terms, please contact us at info@fractionate.in.
         </p>
       </div>
       <Footer />

@@ -59,7 +59,7 @@ export const Footer = () => {
             </Animator>
           </Link>
           <div className="mt-4">
-            <FadeText text="2728 A-Block" />
+            <FadeText text="SCO-81 D Block " />
             <FadeText text="Ranjit Avenue, Amritsar 143001" />
           </div>
           <div className="flex items-center gap-2 mt-4 hover:text-yellow">
@@ -68,7 +68,7 @@ export const Footer = () => {
           </div>
           <div className="flex items-center gap-2 hover:text-yellow">
             <Mail size={20} />
-            <Link href="mailto:info@fractionate.com"><FadeText text="info@fractionate.com" /></Link>
+            <Link href="mailto:info@fractionate.in"><FadeText text="info@fractionate.in" /></Link>
           </div>
         </div>
         <LinkList title="Quick Links" links={quickLinks} />
