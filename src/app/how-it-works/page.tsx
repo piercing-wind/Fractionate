@@ -9,7 +9,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
    title: "How It Works - Fractionate | Simplifying Real Estate Transactions",
    description: "Discover how Fractionate operates to streamline your real estate journey. Learn about our business model designed to make buying, selling, and renting properties seamless and efficient.",
-   metadataBase: new URL("https://fractionate.com/how-it-works"),
+   metadataBase: new URL("https://fractionate.in/how-it-works"),
 }
 
 export default function HowItWorksPage() {

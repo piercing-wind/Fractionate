@@ -9,7 +9,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
    title: "Contact Us - Fractionate | Get in Touch with Real Estate Experts",
    description: "Have questions about buying, selling, or renting property? Contact Fractionate today. Our dedicated team is here to assist with all your real estate needs.",
-   metadataBase: new URL("https://fractionate.com/contact"),
+   metadataBase: new URL("https://fractionate.in/contact"),
 }
 
 export default function ContactPage() {

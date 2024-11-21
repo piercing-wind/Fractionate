@@ -16,7 +16,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
    title: "Fractionate - Your Trusted Partner in Real Estate Solutions",
    description: "Your Key to generational Wealth! Discover your dream property with Fractionate. Specializing in buying, selling, and renting real estate, we offer expert guidance and personalized solutions to meet all your property needs.",
-   metadataBase: new URL("https://fractionate.com/"),
+   metadataBase: new URL("https://fractionate.in/"),
    applicationName: "Fractionate", 
    authors: [
      {

@@ -5,7 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
    title: "Terms and Conditions - Fractionate | Your Agreement with Us",
    description: "Review Fractionate's Terms and Conditions to understand the rules governing your use of our platform. Your trust and compliance ensure a seamless experience.",
-   metadataBase: new URL("https://fractionate.com/terms-and-condition"),
+   metadataBase: new URL("https://fractionate.in/terms-and-condition"),
 }
 
 export default function TermsAndConditions() {

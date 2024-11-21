@@ -5,7 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
    title: "Privacy Policy - Fractionate | Protecting Your Information",
    description: "Read Fractionate's Privacy Policy to understand how we handle your data securely. We prioritize your privacy and ensure transparency in data collection and usage.",
-   metadataBase: new URL("https://fractionate.com/privacy-policy"),
+   metadataBase: new URL("https://fractionate.in/privacy-policy"),
 }
 
 export default function PrivacyPolicy() {

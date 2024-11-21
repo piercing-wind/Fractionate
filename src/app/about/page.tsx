@@ -12,7 +12,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
    title: "About Us - Fractionate | Your Real Estate Experts",
    description: "Learn about Fractionate, a trusted name in real estate. With a commitment to excellence, we specialize in helping clients buy, sell, and rent properties with confidence and ease.",
-   metadataBase: new URL("https://fractionate.com/about"),
+   metadataBase: new URL("https://fractionate.in/about"),
 }
 
 export default function AboutPage() {
