@@ -1,0 +1,21 @@
+{
+   "name": "Bytes With Bits",
+   "short_name": "Bytes With Bits",
+   "description": "Expert in custom software development for all business needs—websites, e-commerce platforms, mobile apps, and AI integration. From tailored desktop applications to engaging mobile experiences, we build scalable, innovative solutions to help your business succeed.",
+   "start_url": "/",
+   "display": "standalone",
+   "background_color": "#ffffff",
+   "theme_color": "#9333ea",
+   "icons": [
+     {
+       "src": "/favicon.ico",
+       "sizes": "192x192",
+       "type": "image/png"
+     },
+     {
+       "src": "/favicon.ico",
+       "sizes": "256x256",
+       "type": "image/x-icon"
+     }
+   ]
+ } 

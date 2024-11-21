@@ -40,7 +40,7 @@ const HeroSection : React.FC  = () => {
                <Carousel />
             </div>
             <div className="w-full lg:w-[40%] max-w-lg h-full mx-auto z-20">
-               <Animator direction='up' delay={1} className="w-full backdrop-blur-lg  rounded-3xl py-4 shadow-lg">
+               <Animator direction='up' delay={0.5} className="w-full backdrop-blur-lg  rounded-3xl py-4 shadow-lg">
                   <div className="w-full flex flex-col items-center gap-6 h-48 sm:h-52">
                      <h4 className="text-2xl sm:text-4xl text-yellow text-center">Need help choosing the <br /> right Investment?</h4>
                      <p className="flex items-center mx-auto gap-4"><Phone color="#ffa014"/>Get Personalized Investment Advice</p>

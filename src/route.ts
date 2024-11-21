@@ -1,7 +1,7 @@
 export const publicRoute = [
    '/',
    '/contact',
-   '/properties',
+   // '/properties',
    '/how-it-works',
    '/about',
    '/terms-and-condition',

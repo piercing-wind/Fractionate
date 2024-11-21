@@ -5,7 +5,15 @@ import { Header } from "@/components/header";
 import { FadeText } from "@/components/ui/fade-text";
 import GradualSpacing from "@/components/ui/gradual-spacing";
 import TypingAnimation from "@/components/ui/typing-animation";
+import { Metadata } from "next";
 import Image from "next/image";
+
+
+export const metadata: Metadata = {
+   title: "About Us - Fractionate | Your Real Estate Experts",
+   description: "Learn about Fractionate, a trusted name in real estate. With a commitment to excellence, we specialize in helping clients buy, sell, and rent properties with confidence and ease.",
+   metadataBase: new URL("https://fractionate.com/about"),
+}
 
 export default function AboutPage() {
    return (

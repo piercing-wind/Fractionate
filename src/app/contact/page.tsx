@@ -2,8 +2,15 @@ import Animator from "@/components/animator";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { FolderPen, Mail, MapPin, MapPinHouse, Phone } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+   title: "Contact Us - Fractionate | Get in Touch with Real Estate Experts",
+   description: "Have questions about buying, selling, or renting property? Contact Fractionate today. Our dedicated team is here to assist with all your real estate needs.",
+   metadataBase: new URL("https://fractionate.com/contact"),
+}
 
 export default function ContactPage() {
    return (
@@ -18,7 +25,7 @@ export default function ContactPage() {
                      <p style={{display: 'ruby'}}>Address <MapPinHouse color="#ffa014"/>: D Block Ranit Avenue, Amritsar, India</p>
                      <p style={{display: 'ruby'}}>Phone <Phone color="#ffa014"/>: <Link className="hover:text-yellow" href="tel:917700008725">+91 77000 08725</Link></p>
                      <p style={{display: 'ruby'}}>Email <Mail color="#ffa014"/>: <Link className="hover:text-yellow" href="mailto:info@fractionate.in">info@fractionate.in</Link></p>
-                     <p style={{display: 'ruby'}}>Geo Locatopn <MapPin color="#ffa014"/>: <Link className="hover:text-yellow" href="https://maps.app.goo.gl/UUA8aTegmswzs3iX7">Google Map</Link></p>
+                     <p style={{display: 'ruby'}}>Geo Location <MapPin color="#ffa014"/>: <Link className="hover:text-yellow" href="https://maps.app.goo.gl/UUA8aTegmswzs3iX7">Google Map</Link></p>
                   </div>
                </Animator>
             </div>

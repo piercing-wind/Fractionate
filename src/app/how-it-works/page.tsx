@@ -3,7 +3,14 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { FadeText } from "@/components/ui/fade-text";
 import { AlignVerticalDistributeCenter, ChartNoAxesCombined, ClipboardList, DollarSign, HandCoins, Home, Landmark, Percent, PieChart, Repeat, Shield, Star, TrendingUp, Waypoints } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+   title: "How It Works - Fractionate | Simplifying Real Estate Transactions",
+   description: "Discover how Fractionate operates to streamline your real estate journey. Learn about our business model designed to make buying, selling, and renting properties seamless and efficient.",
+   metadataBase: new URL("https://fractionate.com/how-it-works"),
+}
 
 export default function HowItWorksPage() {
    const steps = [
@@ -80,7 +87,7 @@ export default function HowItWorksPage() {
                   zIndex: -20
                }}
                loading="eager"
-               sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+               // sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black -z-10 opacity-50"/>
             <div className="max-w-7xl m-auto flex flex-col gap-y-8">
@@ -116,7 +123,7 @@ export default function HowItWorksPage() {
                </div>
                <div className="w-full relative max-h-screen overflow-y-auto rounded-3xl" style={{scrollbarWidth : 'none'}}>
                    {steps.map((step, index) => (
-                     <div key={index} className="w-full m-8 mx-auto sticky top-0  h-screen aspect-[16/9] rounded-3xl overflow-hidden shadow-md shadow-yellow">
+                     <div key={index} className="w-full m-8 mx-auto sticky top-0  h-screen aspect-[3/4] rounded-3xl overflow-hidden shadow-md shadow-yellow">
                         <div className="w-full h-full relative rounded-3xl overflow-hidden flex items-center p-8">
                            <Image
                               key={index}
@@ -128,7 +135,7 @@ export default function HowItWorksPage() {
                                  zIndex: -11
                               }}
                               loading="eager"
-                              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                              // sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                            />
                            <div className={`absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black -z-10 ${index === 5 ? 'opacity-70' : 'opacity-50' }`}/>
                            <div className="flex flex-col gap-y-8 md:p-8">

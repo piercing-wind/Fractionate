@@ -1,5 +1,12 @@
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+   title: "Disclaimer - Fractionate | Legal Information",
+   description: "Read Fractionate's Disclaimer for legal information about our real estate services. Understand the limitations of liability and terms related to property transactions.",
+   metadataBase: new URL("https://fractionate.com/disclaimer"),
+}
 
 export default function Disclaimer() {
   return (
