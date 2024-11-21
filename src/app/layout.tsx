@@ -38,7 +38,7 @@ export const metadata: Metadata = {
    },
    openGraph:{
       type : 'website',
-      title : "Fractionate",
+      title : "Fractionate - Your Trusted Partner in Real Estate Solutions",
       siteName : "Fractionate",
       description : "Fractionate - Your Key to generational Wealth! Discover your dream property with Fractionate. Specializing in buying, selling, and renting real estate, we offer expert guidance and personalized solutions to meet all your property needs.",
    },  
