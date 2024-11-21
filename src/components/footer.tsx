@@ -2,7 +2,7 @@ import Image from "next/image"
 import Animator from "./animator"
 import Link from "next/link"
 import { FadeText } from "./ui/fade-text"
-import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react"
+import { Facebook, Instagram, Linkedin, Mail, Phone, Twitter } from "lucide-react"
 import Watermark from "./watermark"
 
 const LinkList = ({ title, links } : { title : string, links : {href : string, text : string}[] }) => (
@@ -76,10 +76,10 @@ export const Footer = () => {
         <Animator>
           <p className="font-semibold">Connect With Us</p>
           <ul className="flex gap-6 items-center mt-4">
-            <li><Link href=''><Facebook color="#ffa014" /></Link></li>
-            <li><Link href=''><Instagram color="#ffa014" /></Link></li>
-            <li><Link href=''><Linkedin color="#ffa014" /></Link></li>
-            <li><Link href=''><Image src='/whatsapp.svg' alt="WhatsApp" width={20} height={20} /></Link></li>
+            <li><Link href='https://www.facebook.com/profile.php?id=61567832651862&mibextid=LQQJ4d&rdid=AoScN7IiBZHrmKB6&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F8E8zgwqW7NwF6AEf%2F%3Fmibextid%3DLQQJ4d'><Facebook color="#ffa014" /></Link></li>
+            <li><Link href='https://www.instagram.com/fractionate.in'><Instagram color="#ffa014" /></Link></li>
+            <li><Link href='https://l.instagram.com/?u=https%3A%2F%2Fx.com%2Ffractionate_in%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaa0wBg8YDB9Zefpe-aLBEALPYeOHNdNyYoxchJ687DrLMg9SjaoNPFFtgY_aem_359xXOTixYQMhAFcT_bSHw&e=AT3YZLW352yqKLysusEPKiFfsNdE7aVPNP1MgeGMILu7xpt7AdDwXbuUbONmbnWwf4Yy8ZAq6XPMktQ70wAiUpr6Wi7QoFb-KY6rttH0XttKteno-lUJCQ'><Twitter color="#ffa014" /></Link></li>
+            <li><Link href="https://wa.me/917700008725?text=Hello!%20I'm%20interested%20in%20learning%20more%20about%20your%20real%20estate%20services.%20Can%20you%20please%20assist%20me%3F"><Image src='/whatsapp.svg' alt="WhatsApp" width={20} height={20} /></Link></li>
           </ul>
         </Animator>
         <Watermark className="hidden md:flex md:absolute" />

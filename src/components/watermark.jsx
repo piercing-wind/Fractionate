@@ -19,7 +19,7 @@ const Watermark = ({className = ""}) => {
          />
       </a>
       <a href="https://wa.me/918847674817?text=Hi%2C%20I%20saw%20your%20banner%20and%20I%27m%20interested%20in%20getting%20a%20website%20built." target='_blank'>
-         <button className='border flex items-center justify-center w-full flex-shrink-0 text-nowrap rounded-full min-w-[6rem] min-h-6 h-full text-xs border-purple-600 hover:bg-purple-200 hover:scale-105 transition-all duration-200'>
+         <button className='border flex items-center justify-center w-full px-2 flex-shrink-0 text-nowrap rounded-full min-w-[6rem] min-h-6 h-full text-xs border-purple-600 hover:bg-purple-200 hover:scale-105 transition-all duration-200'>
             Get Your website
          </button>
       </a>
