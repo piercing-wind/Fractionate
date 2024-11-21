@@ -14,8 +14,8 @@ jobs:
         node-version: [22.6.0]
 
     steps:
-   #  - name : Truning Maintenance Mode on
-   #    run: sudo touch /var/www/html/maintenance.flag
+    - name: Stop PM2 process
+      run: pm2 stop 12
 
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
@@ -34,9 +34,10 @@ jobs:
     - run: npx prisma db push
     - name: Build
       run: pnpm run build
-   #  - name: Change directory
-      # run: cd /home/ubuntu/gurukirpa/gurukirpaayurveda/gurukirpaayurveda
-   #  - run: pm2 restart 9   
+    - name: Restart PM2 process
+      run: |
+        cd /home/ubuntu/fractionate/fractionate/Fractionate/Fractionate
+        pm2 restart 12 
 
       
 

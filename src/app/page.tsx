@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="">
       <main className="w-full overflow-x-hidden" style={{scrollbarWidth : 'none'}}>
-         <Header className="absolute top-0 text-black lg:text-white z-50"/>
+         <Header className="absolute top-0 text-black lg:text-white  z-50"/>
          <HeroSection/>
          <WhoWeAre/>
          {/* <OurListing /> */}
