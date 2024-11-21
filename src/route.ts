@@ -7,6 +7,12 @@ export const publicRoute = [
    '/terms-and-condition',
    '/privacy-policy',
    '/disclaimer',
+   '/opengraph-image.jpg',
+   '/favicon.ico',
+   '/sitemap.xml',
+   '/robots.txt',
+   '/manifest.json',
+   '/service-worker.js',
 ]
 
 
