@@ -72,7 +72,7 @@ export default function HowItWorksPage() {
          <Header className="absolute top-0 left-0 lg:text-white z-50 backdrop-blur"/>
          <section className="w-full h-screen relative flex items-center justify-center px-8">
             <Image
-               src='/how-it-works/hero-bg.svg'
+               src='/how-it-works/hero-bg.png'
                alt="Fractionate How it works"
                fill
                style={{
@@ -120,7 +120,7 @@ export default function HowItWorksPage() {
                         <div className="w-full h-full relative rounded-3xl overflow-hidden flex items-center p-8">
                            <Image
                               key={index}
-                              src={`/how-it-works/image-${index + 1}.svg`}
+                              src={`/how-it-works/image-${index + 1}.png`}
                               alt={`Fractionate How it works ${step.title}`}
                               fill
                               style={{

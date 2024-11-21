@@ -6,7 +6,7 @@ const LoginPage = () => {
   return (
     <div className="h-screen w-full flex flex-col items-center justify-center overflow-hidden relative text-white">
       <Image
-        src="/how-it-works/image-4.svg"
+        src="/how-it-works/image-4.png"
         alt="logo"
         fill
         style={{
