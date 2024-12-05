@@ -18,7 +18,7 @@ import { register } from "@/actions/register";
 import { RegisterSchema } from "@/schema";
 import {zodResolver} from "@hookform/resolvers/zod";
 
-export function RegisterForm({buttonText="Request Callback"}: {buttonText?: string}) {
+export function RegisterForm({buttonText="Request Callback", className = "text-black"}: {buttonText?: string, className?: string}) {
    const form = useForm<z.infer<typeof RegisterSchema>>({
       resolver: zodResolver(RegisterSchema),
       defaultValues: {
@@ -51,7 +51,7 @@ export function RegisterForm({buttonText="Request Callback"}: {buttonText?: stri
     };
 
   return (
-    <div className="w-full max-w-lg mx-auto h-full flex items-center justify-center px-4 text-black">
+    <div className={`w-full max-w-lg mx-auto h-full flex items-center justify-center px-4 ${className}`}>
       <Form aria-label="Register Form" {...form}>
         <form aria-label="Register Form" onSubmit={handleSubmit(onSubmit)} className="gap-y-2 md:gap-y-6 flex flex-col items-center">
           <div className="flex items-center gap-4">

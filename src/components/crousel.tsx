@@ -74,7 +74,7 @@ const Carousel = () => {
 
   return (
     <div className='relative h-auto mx-auto max-w-lg flex flex-col items-center justify-center'>
-      <section className="min-h-[30vmin] aspect-[16/9] w-full my-4 relative flex items-center justify-center rounded-2xl">
+      <section className="min-h-[30vmin] aspect-[16/9] w-full my-4 relative flex items-center justify-center rounded-2xl shadow shadow-white">
         <div className="absolute w-14 h-14 bg-gradient-to-bl from-yellow via-neutral-400 to-white opacity-50 -z-20 rounded-full -top-10 -right-8" />
         <div className='flex items-center w-[108%] justify-between absolute z-50 top-[50%] bottom-[50%] overflow-visible'>
           <button

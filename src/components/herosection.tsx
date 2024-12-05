@@ -33,20 +33,25 @@ const HeroSection : React.FC  = () => {
                      />
                   </div>
                   <TypingAnimation
-                     className="text-white mb-14 text-xl mt-4 md:w-[75%] h-28 px-2 pb-4 rounded-sm lg:backdrop-blur-lg "
+                     className="text-white mb-14 text-xl mt-4 md:w-[75%] min-h-28 px-2 py-4 rounded-sm backdrop-blur-lg shadow shadow-white "
                      text="Fractionate makes premium real estate investments accessible, offering  high-return opportunities through fractional ownership in prime locations."
                   />
                </div>
                <Carousel />
             </div>
             <div className="w-full lg:w-[40%] max-w-lg h-full mx-auto z-20">
-               <Animator direction='up' delay={0.5} className="w-full backdrop-blur-lg  rounded-3xl py-4 shadow-lg">
+               <Animator direction='up' delay={0.5} className="w-full backdrop-blur-3xl shadow-white  text-white rounded-3xl py-4 shadow-md">
                   <div className="w-full flex flex-col items-center gap-6 h-48 sm:h-52">
-                     <h4 className="text-2xl sm:text-4xl text-yellow text-center">Need help choosing the <br /> right Investment?</h4>
+                     <h4 className="text-2xl sm:text-4xl text-yellow text-center font-semibold"
+                     style={{
+                        textShadow: '0px 0px 1px rgba(255, 255, 255, 0.5)',
+                        // WebkitTextStroke: '1px '
+                     }}
+                     >Need help choosing the <br /> right Investment?</h4>
                      <p className="flex items-center mx-auto gap-4"><Phone color="#ffa014"/>Get Personalized Investment Advice</p>
                      <div className="w-[80%] rounded-full h-1 bg-yellow mb-12"/>
                   </div>
-                     <RegisterForm />
+                     <RegisterForm className='text-white' />
                </Animator>
                <Link href="/properties" >
                   <ZoomAnimator
@@ -71,14 +76,14 @@ const HeroSection : React.FC  = () => {
             </div>
          </div>
          <div className="h-[60%] w-full absolute top-0 left-0  rounded-b-full bg-gradient-to-b opacity-15 from-[#4CC9F0] to-yellow -z-50" />
-         <div className="h-full w-full absolute top-0 left-0 bg-black z-10 opacity-10" />
+         <div className="h-full w-full absolute top-0 left-0 bg-fuchsia-900 z-10 opacity-20" />
          <Image
             src="/hero-bg-1X2.png"
             alt="Fractionate"
             fill
             style={{ zIndex: -40, opacity: 1, objectFit: "fill" }}
             sizes='100vw'
-            className="h-full w-full lg:hidden"
+            className="h-full w-full lg:hidden "
             loading='eager'
          />
          <Image
