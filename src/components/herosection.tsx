@@ -33,7 +33,7 @@ const HeroSection : React.FC  = () => {
                      />
                   </div>
                   <TypingAnimation
-                     className="text-white mb-14 text-xl mt-4 md:w-[75%] min-h-28 px-2 py-4 rounded-sm backdrop-blur-lg shadow shadow-white "
+                     className="text-white mb-14 text-xl mt-4 md:w-[75%] min-h-36 h-full px-2 py-4 rounded-sm backdrop-blur-lg shadow shadow-white "
                      text="Fractionate makes premium real estate investments accessible, offering  high-return opportunities through fractional ownership in prime locations."
                   />
                </div>
