@@ -29,5 +29,5 @@ export const register = async (data: z.infer<typeof RegisterSchema>) => {
    });
 
 
-   return { success: "We have received your information, We will contact you soon!" };
+   return { success: "We have received your information. We will contact you soon! Until then, you can try logging in :)" };
 };

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { LazyMotion, domAnimation } from "framer-motion";
+import Head from "next/head";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -51,7 +53,8 @@ export const metadata: Metadata = {
          "url": "https://fractionate.in/",
          "logo": "https://fractionate.in/favicon.ico"
        }),
-   }
+   },
+   
  };
 
 
@@ -62,6 +65,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3LWD24BCL"></Script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Z3LWD24BCL');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       > 
