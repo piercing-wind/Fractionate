@@ -51,7 +51,7 @@ const HeroSection : React.FC  = () => {
                      <p className="flex items-center mx-auto gap-4"><Phone color="#ffa014"/>Get Personalized Investment Advice</p>
                      <div className="w-[80%] rounded-full h-1 bg-yellow mb-12"/>
                   </div>
-                     <RegisterForm className='text-white' />
+                     <RegisterForm className='text-black' formLabelColor="text-white" />
                </Animator>
                <Link href="/properties" >
                   <ZoomAnimator

@@ -17,8 +17,10 @@ import { ZoomAnimator } from "./animator";
 import { register } from "@/actions/register";
 import { RegisterSchema } from "@/schema";
 import {zodResolver} from "@hookform/resolvers/zod";
+import { useRouter } from "next/navigation";
 
-export function RegisterForm({buttonText="Request Callback", className = "text-black"}: {buttonText?: string, className?: string}) {
+export function RegisterForm({buttonText="Request Callback", className = "text-black", formLabelColor=""}: {buttonText?: string, className?: string, formLabelColor?: string}) {
+   const router = useRouter();
    const form = useForm<z.infer<typeof RegisterSchema>>({
       resolver: zodResolver(RegisterSchema),
       defaultValues: {
@@ -45,6 +47,7 @@ export function RegisterForm({buttonText="Request Callback", className = "text-b
           setSuccess(response.success || null);
           if (response.success) {
             reset();
+            router.push('/thankyou');
           }
         });
       });
@@ -60,7 +63,7 @@ export function RegisterForm({buttonText="Request Callback", className = "text-b
                name="fname"
                render={({ field }) => (
                  <FormItem>
-                   <FormLabel htmlFor="fname">First Name</FormLabel>
+                   <FormLabel className={formLabelColor} htmlFor="fname">First Name</FormLabel>
                    <FormControl>
                      <Input 
                         {...field} 
@@ -80,7 +83,7 @@ export function RegisterForm({buttonText="Request Callback", className = "text-b
                name="lname"
                render={({ field }) => (
                  <FormItem>
-                   <FormLabel htmlFor="lname">Last Name</FormLabel>
+                   <FormLabel className={formLabelColor} htmlFor="lname">Last Name</FormLabel>
                    <FormControl>
                      <Input 
                         {...field} 
@@ -102,7 +105,7 @@ export function RegisterForm({buttonText="Request Callback", className = "text-b
                name="email"
                render={({ field }) => (
                  <FormItem>
-                   <FormLabel htmlFor="email">Email</FormLabel>
+                   <FormLabel className={formLabelColor} htmlFor="email">Email</FormLabel>
                    <FormControl>
                      <Input 
                         {...field} 
@@ -122,7 +125,7 @@ export function RegisterForm({buttonText="Request Callback", className = "text-b
                name="phone"
                render={({ field }) => (
                  <FormItem>
-                   <FormLabel htmlFor="phone">Phone Number</FormLabel>
+                   <FormLabel className={formLabelColor} htmlFor="phone">Phone Number</FormLabel>
                    <FormControl>
                      <Input 
                         {...field} 
@@ -144,7 +147,7 @@ export function RegisterForm({buttonText="Request Callback", className = "text-b
               name="password"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel htmlFor="password">Password</FormLabel>
+                  <FormLabel className={formLabelColor} htmlFor="password">Password</FormLabel>
                   <FormControl>
                     <div className="relative">
                       <Input
@@ -175,7 +178,7 @@ export function RegisterForm({buttonText="Request Callback", className = "text-b
               name="confirmPassword"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel htmlFor="confirmPassword">Confirm Password</FormLabel>
+                  <FormLabel className={formLabelColor} htmlFor="confirmPassword">Confirm Password</FormLabel>
                   <FormControl>
                     <div className="relative">
                       <Input

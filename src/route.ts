@@ -13,6 +13,7 @@ export const publicRoute = [
    '/robots.txt',
    '/manifest.json',
    '/service-worker.js',
+   '/thankyou'
 ]
 
 
