@@ -7,7 +7,6 @@ import { getUsers } from "@/data/user";
 
 const page = async () => {
   const session = await auth();
-  console.log(session?.user);
   if (session?.user.role !== "ADMIN") {
     notFound()
   }
