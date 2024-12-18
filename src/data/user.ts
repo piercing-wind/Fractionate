@@ -25,3 +25,16 @@ export const getUserbyId = async (id : string) => {
       return null;
    }
 }
+
+export const getUsers = async (page: number = 1, limit: number = 10) => {
+   try {
+     const offset = (page - 1) * limit;
+     const users = await db.user.findMany({
+       skip: offset,
+       take: limit,
+     });
+     return users;
+   } catch (error) {
+     return null;
+   }
+ };
