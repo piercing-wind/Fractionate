@@ -18,11 +18,12 @@ const HeaderWithoutSessionProvider = ({className = ''}:{className ?: string}) =>
       name
    }))
 
-   const dropdownRef = useRef<HTMLDivElement>(null);
+   const dropdownRef = useRef<HTMLLIElement>(null);
 
    const [current, setCurrent] = useState('/')
    const [isOpen, setIsOpen] = useState(false)
    const [dropdownOpen, setDropdownOpen] = useState(false)
+   const [dropdownOpen2, setDropdownOpen2] = useState(false)
 
    const active = "shadow-md bg-yellow text-white "
    const path = usePathname();
@@ -42,6 +43,7 @@ const HeaderWithoutSessionProvider = ({className = ''}:{className ?: string}) =>
       const handleClickOutside = (event: MouseEvent) => {
          if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
             setDropdownOpen(false);
+            setDropdownOpen2(false);
          }
       };
 
@@ -59,16 +61,23 @@ const HeaderWithoutSessionProvider = ({className = ''}:{className ?: string}) =>
                {/* <li className="hover:scale-105 transition-all duration-300" ><Link className={`text-nowrap px-5 py-2 rounded-full ${current === '/listings' ?  active : 'hover:bg-yellow hover:bg-opacity-55 '} transition-all duration-300`} href='/listings'>Listings</Link></li> */}
                <li className="hover:scale-105 transition-all duration-300" ><Link className={`text-nowrap px-5 py-2 rounded-full ${current === '/how-it-works' ?  active : 'hover:bg-yellow hover:bg-opacity-55 '} transition-all duration-300`} href='/how-it-works'>How it Works</Link></li>
                <li className="relative transition-all duration-300"
+                
                >
-                  <span onClick={()=>setDropdownOpen(true)} onMouseEnter={() => setDropdownOpen(true)}  className={`text-nowrap px-5 py-2 rounded-full hover:bg-yellow hover:bg-opacity-55 transition-all duration-300 cursor-pointer`}>Our Presence</span>
+                  <span 
+                     onClick={()=>setDropdownOpen(true)} 
+                     onMouseEnter={() => setDropdownOpen(true)}  
+                     className={`text-nowrap px-5 py-2 rounded-full hover:bg-yellow hover:bg-opacity-55 transition-all duration-300 cursor-pointer`}
+                     
+                     >Our Presence</span>
                   {dropdownOpen && (
                      <motion.ul
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg z-50 p-4"
-                        ref={dropdownRef}
                         onMouseLeave={()=>setDropdownOpen(false)}
+                        onClick={(e : React.MouseEvent<HTMLUListElement, MouseEvent>)=> e.stopPropagation()}
+                        ref={dropdownRef}
                      >
                         {urls.map(({ slug, name }) => (
                            <li key={slug} className="hover:bg-yellow hover:scale-105 hover:bg-opacity-55 rounded-full transition-all duration-300">
@@ -121,16 +130,18 @@ const HeaderWithoutSessionProvider = ({className = ''}:{className ?: string}) =>
                {/* <li><Link className={`text-nowrap px-5 py-2 rounded-full ${current === '/listings' ?  active : 'hover:bg-yellow hover:bg-opacity-55 '} transition-all duration-300`} href='/listings'>Listings</Link></li> */}
                <li><Link className={`text-nowrap px-5 py-2 rounded-full ${current === '/how-it-works' ?  active : 'hover:bg-yellow hover:bg-opacity-55 '} transition-all duration-300`} href='/how-it-works'>How it Works</Link></li>
                <li className="relative transition-all duration-300"
+                
                >
-                  <span onClick={()=>setDropdownOpen(true)} onMouseEnter={() => setDropdownOpen(true)}  className={`text-nowrap px-5 py-2 rounded-full hover:bg-yellow hover:bg-opacity-55 transition-all duration-300 cursor-pointer`}>Our Presence</span>
-                  {dropdownOpen && (
+                  <span onClick={()=>setDropdownOpen2(true)} onMouseEnter={() => setDropdownOpen2(true)}  className={`text-nowrap px-5 py-2 rounded-full hover:bg-yellow hover:bg-opacity-55 transition-all duration-300 cursor-pointer`}>Our Presence</span>
+                  {dropdownOpen2 && (
                      <motion.ul
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg z-50 p-4"
+                        onClick={(e : React.MouseEvent<HTMLUListElement, MouseEvent>)=> e.stopPropagation()}
+                        onMouseLeave={()=>setDropdownOpen2(false)}
                         ref={dropdownRef}
-                        onMouseLeave={()=>setDropdownOpen(false)}
                      >
                         {urls.map(({ slug, name }) => (
                            <li key={slug} className="hover:bg-yellow hover:scale-105 hover:bg-opacity-55 rounded-full transition-all duration-300">
