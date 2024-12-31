@@ -1,7 +1,15 @@
 import { MetadataRoute } from "next";
-
+import { locationData } from "@/data/location";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const lastModified = new Date();
+  
+   const locationRoutes = locationData.map(({slug}) => {
+      return {
+         url: `https://fractionate.in/${slug}`,
+         lastModified,
+         changeFrequency: "monthly" as "monthly",
+      };
+   })
 
   return [
     {
@@ -46,6 +54,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "yearly",
       priority: 0.8,
     },
-
+      ...locationRoutes
   ];
 }
