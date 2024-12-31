@@ -5,7 +5,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   
    const locationRoutes = locationData.map(({slug}) => {
       return {
-         url: `https://fractionate.in/${slug}`,
+         url: `https://fractionate.in${slug}`,
          lastModified,
          changeFrequency: "monthly" as "monthly",
       };
