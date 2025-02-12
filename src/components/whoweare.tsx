@@ -27,7 +27,7 @@ export const WhoWeAre = memo(() => {
                   framerProps={{ show: {transition :{duration : 0.5,delay: 0.5}}}}
                />
                <FadeText
-                  text="At Fractionate, we’re transforming real estate investment by making premium properties accessible through fractional ownership, offering high-return opportunities for investors of all sizes."
+                  text="At Fractionate, we’re transforming real estate investment by making commercial properties accessible through fractional ownership, offering high-return with ROI of 8-10% and IRR of 15-17% opportunities for investors of all sizes."
                   className="text-xl pcolor"
                   direction="left"
                   framerProps={{ show: {transition :{duration : 0.5,delay: 0.8}}}}
