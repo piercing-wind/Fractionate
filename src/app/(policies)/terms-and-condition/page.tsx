@@ -13,7 +13,7 @@ export default function TermsAndConditions() {
     <main className="w-full">
       <Header />
       <div className="max-w-5xl mx-auto w-full p-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-yellow mb-4">Terms and Conditions for Fractionate</h1>
+        <h2 className="text-3xl sm:text-4xl font-bold text-yellow mb-4">Terms and Conditions for Fractionate</h2>
         <p className="mb-4">
           Welcome to Fractionate, a platform owned and operated by Fractionate Properties Private Limited (the &ldquo;Company&rdquo;), registered under the laws of India and headquartered in Amritsar, Punjab. By visiting our website and accessing the resources, services, products, and tools provided, you agree to comply with these Terms and Conditions along with our Privacy Policy.
         </p>

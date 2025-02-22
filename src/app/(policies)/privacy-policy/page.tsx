@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
     <main className="w-full">
       <Header />
       <div className="max-w-5xl mx-auto w-full p-8 my-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-yellow mb-4">Privacy Policy</h1>
+        <h2 className="text-3xl sm:text-4xl font-bold text-yellow mb-4">Privacy Policy</h2>
         <p className="mb-4">Effective Date: November 20, 2024</p>
         <p className="mb-4">
           Fractionate (referred to as &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) values your trust and is committed to safeguarding your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you access our platform or use our services. By using our website or services, you agree to the terms outlined in this policy.

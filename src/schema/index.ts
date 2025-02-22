@@ -11,6 +11,13 @@ export const RegisterSchema = z.object({
   message: "Passwords do not match.",
   path: ["confirmPassword"],
 });
+export const ContactSchema = z.object({
+  fname: z.string().min(2, "First Name must be at least 2 characters."),
+  lname: z.string().min(2, "Last Name must be at least 2 characters."),
+  email: z.string().email("Email must be valid."),
+  phone: z.string().min(10, "Phone Number must be at least 10 characters."),
+  message : z.string().min(1, "Message cannot be empty."),
+});
 
 export interface FormData extends z.infer<typeof RegisterSchema> {}
 

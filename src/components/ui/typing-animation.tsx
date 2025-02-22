@@ -48,7 +48,7 @@ export default function TypingAnimation({
   }, [i, text, duration, isInView]);
 
   return (
-    <h1
+    <h2
       ref={ref}
       className={cn(
         "",
@@ -56,6 +56,6 @@ export default function TypingAnimation({
       )}
     >
       {displayedText}
-    </h1>
+    </h2>
   );
 }

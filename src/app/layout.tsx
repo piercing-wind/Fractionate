@@ -15,7 +15,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 export const metadata: Metadata = {
-   title: "Fractionate - Your Trusted Partner in Real Estate Solutions",
+   title: "Fractionate - Invest in Fractional Real Estate Ownership in India",
    description: "Your Key to generational Wealth! Discover your dream property with Fractionate. Specializing in buying, selling, and renting real estate, we offer expert guidance and personalized solutions to meet all your property needs.",
    metadataBase: new URL("https://fractionate.in/"),
    applicationName: "Fractionate", 

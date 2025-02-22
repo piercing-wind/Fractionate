@@ -23,7 +23,7 @@ const LoginPage = () => {
         <Image src="/logo.svg" alt="Logo" width={150} height={50} priority />
       </Link>
       <div className="max-w-lg w-full border-2 border-yellow mt-4 rounded-xl p-4 shadow-x backdrop-blur-2xl py-4 pb-14 z-50">
-      <h1 className="text-4xl text-white font-semibold drop-shadow-sm " >Register</h1>
+      <h2 className="text-4xl text-white font-semibold drop-shadow-sm " >Register</h2>
       <p>Already have an account? <Link href="/login" className="text-black hover:underline mb-4"> Login</Link> </p>
         <Suspense fallback={<div>Loading...</div>}>
           <RegisterForm buttonText="Register"/>

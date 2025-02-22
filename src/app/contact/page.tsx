@@ -19,7 +19,7 @@ export default function ContactPage() {
          <section className="w-full relative mb-14">
             <div className="max-w-7xl mx-auto  h-screen flex items-center">
                <Animator className="min-h-[50vmin] border-4 w-full max-w-lg flex flex-col items-center justify-start p-4 backdrop-blur-lg text-white">
-                  <h1 className="text-4xl md:text-5xl">Contact</h1>
+                  <h2 className="text-4xl md:text-5xl">Contact</h2>
                   <div className="w-full my-4 text-xl flex flex-col gap-y-4">
                      <p style={{display: 'ruby'}}>Business Name <FolderPen color="#ffa014"/>: <span className="text-2xl text-yellow"> Fractionate</span></p>
                      <p style={{display: 'ruby'}}>Address <MapPinHouse color="#ffa014"/>: D Block Ranit Avenue, Amritsar, India</p>

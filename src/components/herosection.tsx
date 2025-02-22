@@ -5,6 +5,7 @@ import Image from "next/image";
 import GradualSpacing from "@/components/ui/gradual-spacing";
 import TypingAnimation from "./ui/typing-animation";
 import Animator from '@/components/animator';
+import { ContactForm } from './contactForm';
 
 
 const Carousel = lazy(() => import('@/components/crousel'));
@@ -42,16 +43,16 @@ const HeroSection : React.FC  = () => {
             <div className="w-full lg:w-[40%] max-w-lg h-full mx-auto z-20">
                <Animator direction='up' delay={0.5} className="w-full backdrop-blur-3xl shadow-white  text-white rounded-3xl py-4 shadow-md">
                   <div className="w-full flex flex-col items-center gap-6 h-48 sm:h-52">
-                     <h4 className="text-2xl sm:text-4xl text-yellow text-center font-semibold"
+                     <h1 className="text-2xl sm:text-4xl text-yellow text-center font-semibold"
                      style={{
                         textShadow: '0px 0px 1px rgba(255, 255, 255, 0.5)',
                         // WebkitTextStroke: '1px '
                      }}
-                     >Need help choosing the <br /> right Investment?</h4>
+                     >Need help choosing the <br /> right Investment?</h1>
                      <p className="flex items-center mx-auto gap-4"><Phone color="#ffa014"/>Get Personalized Investment Advice</p>
                      <div className="w-[80%] rounded-full h-1 bg-yellow mb-12"/>
                   </div>
-                     <RegisterForm className='text-black' formLabelColor="text-white" />
+                     <ContactForm className='text-black' formLabelColor="text-white" />
                </Animator>
                <Link href="/properties" >
                   <ZoomAnimator

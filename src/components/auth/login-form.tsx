@@ -73,7 +73,7 @@ export const LoginForm = () => {
                />
             </Link>
          <div className="w-[20rem] md:w-[24rem] border-2 border-yellow mt-4 rounded-xl p-4 shadow-x pb-8 overflow-hidden backdrop-blur-2xl z-50">
-            <h1 className="text-4xl font-semibold drop-shadow-sm mb-4" >Login </h1>
+            <h2 className="text-4xl font-semibold drop-shadow-sm mb-4" >Login </h2>
             <Form {...form}>
                <form onSubmit={form.handleSubmit(onSubmit)}
                className='flex flex-col space-y-4 my-8'

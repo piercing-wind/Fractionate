@@ -78,7 +78,7 @@ export default async function Page({ params }: { params: Promise<{ location: str
             {generateRandomBalls(10)}
             <section className="flex flex-col lg:flex-row items-start gap-8 ">
                <div className="flex flex-col justify-center gap-y-4 w-full lg:max-w-3xl">
-                 <h1 className="font-bold text-4xl mb-4">{getRandomWordHighlighted(data?.title!)}</h1>
+                 <h2 className="font-bold text-4xl mb-4">{getRandomWordHighlighted(data?.title!)}</h2>
                  <p>{data?.description}</p>
                  <p>{data?.description2}</p>
 

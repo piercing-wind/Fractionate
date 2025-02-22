@@ -78,7 +78,7 @@ export default function AboutPage() {
 
          <section className="w-full my-24 px-8 py-14">
             <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 ">
-               <Animator hoverFlip delay={0.2} className="relative bg-black bg-opacity-20 text-white overflow-hidden flex-1 max-w-md lg:max-w-full h-[60vmin] 2xl:h-[50vmin] rounded-xl flex flex-col items-center justify-center gap-y-8 p-8 shadow-lg">
+               <Animator hoverFlip delay={0.2} className="relative bg-black bg-opacity-40 text-white overflow-hidden flex-1 max-w-md lg:max-w-full h-[60vmin] 2xl:h-[50vmin] rounded-xl flex flex-col items-center justify-center gap-y-8 p-8 shadow-lg">
                   <FadeText
                      text="Our Mission"
                      className="text-3xl sm:text-4xl "
@@ -100,7 +100,7 @@ export default function AboutPage() {
                      // className="border-8 border-white"
                   />
                </Animator>
-               <Animator hoverFlip delay={0.4} className="relative bg-black bg-opacity-20 text-white overflow-hidden flex-1 max-w-md lg:max-w-full h-[60vmin] 2xl:h-[50vmin] rounded-xl flex flex-col items-center justify-center gap-y-8 p-8 shadow-lg">
+               <Animator hoverFlip delay={0.4} className="relative bg-black bg-opacity-40 text-white overflow-hidden flex-1 max-w-md lg:max-w-full h-[60vmin] 2xl:h-[50vmin] rounded-xl flex flex-col items-center justify-center gap-y-8 p-8 shadow-lg">
                   <FadeText
                      text="Our Vision"
                      className="text-3xl sm:text-4xl"
@@ -126,7 +126,7 @@ export default function AboutPage() {
          </section>
          <section className="w-full my-14 py-14">
             <div className="max-w-7xl mx-auto">
-               <h1 className="p-6 text-4xl sm:text-5xl mb-8">Problems we solve as <span className="text-yellow">Fractionate</span></h1>
+               <h2 className="p-6 text-4xl sm:text-5xl mb-8">Problems we solve as <span className="text-yellow">Fractionate</span></h2>
                <QNA/>
             </div>
          </section>

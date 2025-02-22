@@ -15,7 +15,7 @@ const page = async () => {
     <div className="w-full">
       <Header />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen my-4">
-        <h1 className="text-2xl">Submitted Forms</h1>
+        <h2 className="text-2xl">Submitted Forms</h2>
         <div className="flex gap-4 my-4">
           <table className="min-w-full bg-white border border-neutral-300">
             <thead>
