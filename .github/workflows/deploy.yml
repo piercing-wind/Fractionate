@@ -27,7 +27,7 @@ jobs:
     - name: Load .env varables
       run: |
         export $(grep -v '^#' .env | xargs)
-    - run: pnpm install
+    - run: pnpm install --frozen-lockfile
     - name: Prisma Database Deploy
       run: npx prisma deploy
     - name: Build
