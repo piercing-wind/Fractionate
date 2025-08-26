@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Stop PM2 process
-      run: pm2 stop 12
+      run: pm2 stop 3
 
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
@@ -27,17 +27,15 @@ jobs:
     - name: Load .env varables
       run: |
         export $(grep -v '^#' .env | xargs)
-    - run: npm install -g pnpm
     - run: pnpm install --frozen-lockfile
     - name: Prisma Database Deploy
-      run: npx prisma generate
-    - run: npx prisma db push
+      run: npx prisma deploy
     - name: Build
       run: pnpm run build
     - name: Restart PM2 process
       run: |
         cd /home/ubuntu/fractionate/fractionate/Fractionate/Fractionate
-        pm2 restart 12 
+        pm2 restart 3 
 
       
 
