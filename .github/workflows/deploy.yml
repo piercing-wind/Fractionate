@@ -29,7 +29,7 @@ jobs:
         export $(grep -v '^#' .env | xargs)
     - run: pnpm install --frozen-lockfile
     - name: Prisma Database Deploy
-      run: npx prisma deploy
+      run: npx prisma migrate deploy
     - name: Build
       run: pnpm run build
     - name: Restart PM2 process
