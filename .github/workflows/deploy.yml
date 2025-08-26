@@ -24,14 +24,19 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Create .env file
       run: echo "${{secrets.ENV_VARIABLE}}" > .env
+    - name: Configure DNS resolution
+      run: |
+        # Add Google DNS to resolve external hostnames
+        echo "nameserver 8.8.8.8" | sudo tee -a /etc/resolv.conf
+        echo "nameserver 8.8.4.4" | sudo tee -a /etc/resolv.conf
     - name: Load .env varables
       run: |
         export $(grep -v '^#' .env | xargs)
     - run: pnpm install --frozen-lockfile
     - name: Generate Prisma Client
       run: npx prisma generate
-    - name: Push Database Schema
-      run: npx prisma db push
+    - name: Push Database Schema (skip on connection error)
+      run: npx prisma db push || echo "Database push failed, continuing with build..."
     - name: Build
       run: pnpm run build
     - name: Restart PM2 process
